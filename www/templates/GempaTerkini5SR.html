@@ -1,0 +1,17 @@
+﻿<ion-view view-title="Gempabumi Terkini > 5 SR">
+  <ion-content class="im-wrapper">
+    <div class="list card" ng-repeat="g in dataGempa">
+        <div class="item item-icon-left">
+          <i class="icon ion-alert-circled"></i>
+          <h2>{{g.Wilayah}}</h2>
+          <p>{{g.Tanggal}},{{g.Jam}}</p>
+        </div>
+        <div class="item item-body">
+          <pre>Lat & Long      : {{g.point.coordinates}}</pre>
+          <pre>Lintang & Bujur : {{g.Lintang}}, {{g.Bujur}}</pre>
+          <pre>Magnitude       : {{g.Magnitude}}</pre>
+          <pre>Kedalaman       : {{g.Kedalaman}}</pre>
+        </div>
+      </div>
+  </ion-content>
+</ion-view>

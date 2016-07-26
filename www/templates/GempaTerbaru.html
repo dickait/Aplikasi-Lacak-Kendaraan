@@ -1,0 +1,19 @@
+﻿<ion-view view-title="Gempabumi Terbaru">
+  <ion-content>
+    <div class="list card">
+        <div class="item item-body">
+          <ng-map style="border-shadow:none;" zoom="6" center="[{{latitude}},{{longitude}}]">
+            <marker position="[{{latitude}},{{longitude}}]" title="{{dataGempa.Wilayah}}" animation="Animation.BOUNCE"></marker>
+          </ng-map>
+        </div>
+        <div class="item item-body">
+          <h2>{{dataGempa.Wilayah}}</h2>
+          <p>Tanggal Dan Jam : {{dataGempa.Tanggal}},{{dataGempa.Jam}}</p>
+          <p>Lat & Long : {{dataGempa.point.coordinates}}</p>
+          <p>Lintang & Bujur : {{dataGempa.Lintang}}, {{dataGempa.Bujur}}</p>
+          <p>Magnitude : {{dataGempa.Magnitude}}</p>
+          <p>Kedalaman : {{dataGempa.Kedalaman}}</p>
+        </div>
+      </div>
+  </ion-content>
+</ion-view>

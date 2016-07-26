@@ -1,0 +1,27 @@
+<ion-view title="Jaringan Stasiun Gempa" id="page9" style="background-color:#4B77BE;">
+    <ion-content padding="true" class="has-header">
+      <div class="list card" ng-repeat="s in dataStasiun">
+        <div class="item item-icon-left">
+          <i class="icon ion-android-globe"></i>
+          <h1>{{s.Type}}</h1>
+          <pre>Kode UAKPB : {{s.Kode_UAKPB}}</pre>
+        </div>
+        <div class="item item-body">
+          <pre>Basis Wilayah  : {{s.Bawil}}</pre>
+          <pre>Tahun Operasi  : {{s.TahunOperasi}}</pre>
+          <pre>Lat & Long     : {{s.point.coordinates}}</pre>
+          <pre>Lintang        : {{s.Lintang}}</pre>
+          <pre>Bujur          : {{s.Bujur}}</pre>
+          <pre>Desa           : {{s.Bujur}}</pre>
+          <pre>Kecamatan      : {{s.Kecamatan}}</pre>
+          <pre>Kabupaten      : {{s.Kabupaten}}</pre>
+          <pre>Provinsi       : {{s.Provinsi}}</pre>
+          <pre>Alamat         : {{s.Alamat}}</pre>
+          <pre>Telp           : {{s.Telp}}</pre>
+          <pre>Fax            : {{s.Fax}}</pre>
+          <pre>Kepala         : {{s.Kepala}}</pre>
+          <pre>Elevasi        : {{s.Elevasi}}</pre>
+        </div>
+      </div>
+    </ion-content>
+</ion-view>
