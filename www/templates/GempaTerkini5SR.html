@@ -2,12 +2,10 @@
   <ion-content class="im-wrapper">
     <div class="list">
       <div class="item item-input-inset">
-        <div class="item item-button-right">
           <label class="item-input-wrapper">
             <i class="icon ion-ios-search"></i>
             <input type="text" placeholder="Cari Lokasi" ng-model="cari">
           </label>
-        </div>
       </div>
     </div>
     <div class="list card stable-bg" ng-repeat="g in dataGempa | filter: cari">

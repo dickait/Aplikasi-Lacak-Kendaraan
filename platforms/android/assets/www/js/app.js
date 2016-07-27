@@ -89,6 +89,16 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         }
     })
 
+    .state('app.Tentang', {
+        url: '/Tentang',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/Tentang.html',
+                controller: 'StasiunGempaController'
+            }
+        }
+    })
+
     .state('app.GempaTerkini', {
         url: '/GempaTerkini',
         views: {
