@@ -1,12 +1,18 @@
 ﻿<ion-view view-title="Gempabumi Terkini > 5 SR" style="background-color:#90CAF9;">
   <ion-content class="im-wrapper">
-    <div class="list card" ng-repeat="g in dataGempa">
-        <div class="item item-icon-left" style="background-color:#42A5F5;">
+    <!-- <label class="item-input">
+      <i class="icon ion-search placeholder-icon"></i>
+      <input type="search" placeholder="Cari Lokasi" ng-model="cari" />
+    </label> -->
+    <div class="list card stable-bg" ng-repeat="g in dataGempa | filter: cari">
+        <!-- <div class="item item-icon-left" style="background-color:#42A5F5;"> -->
+        <div class="item item-icon-left">
           <i class="icon ion-alert-circled"></i>
           <h2>{{g.Wilayah}}</h2>
           <p>{{g.Tanggal}},{{g.Jam}}</p>
         </div>
-        <div class="item item-body" style="background-color:#BBDEFB;">
+        <!-- <div class="item item-body" style="background-color:#BBDEFB;"> -->
+        <div class="item item-body">
           <pre>Lat & Long      : {{g.point.coordinates}}</pre>
           <pre>Lintang & Bujur : {{g.Lintang}}, {{g.Bujur}}</pre>
           <pre>Magnitude       : {{g.Magnitude}}</pre>

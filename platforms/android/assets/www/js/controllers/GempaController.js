@@ -30,7 +30,7 @@ angular.module('app')
     }
 
     getGempa();
-
+    
   })
 
   .controller('GempaDirasakanController', function($scope, services) {
