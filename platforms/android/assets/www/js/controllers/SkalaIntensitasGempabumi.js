@@ -1,4 +1,4 @@
-﻿app.controller('SkalaIntensitasGempabumi', function ($scope, $stateParams, ionicMaterialInk) {
+﻿app.controller('SkalaIntensitasGempabumi', function ($scope, $stateParams, ionicMaterialInk, ionicMaterialMotion) {
 
   ionicMaterialInk.displayEffect();
 

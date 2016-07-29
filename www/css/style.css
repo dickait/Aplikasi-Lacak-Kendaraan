@@ -250,7 +250,7 @@ margin-top:10px;
 }
 
 .item-expand.active {
-  max-height: 400px;
+  max-height: 800px;
   transition: max-height 0.3s ease-out;
 }
 
@@ -265,3 +265,129 @@ margin-top:10px;
   margin-right: 10px;
 }
 /*end item*/
+
+/*animasi rollIn*/
+.rollIn:nth-child(1){
+  -webkit-animation-delay: 0.4s;
+}
+
+.rollIn:nth-child(2){
+  -webkit-animation-delay: 0.8s;
+}
+
+.rollIn:nth-child(3){
+  -webkit-animation-delay: 1.2s;
+}
+
+.rollIn:nth-child(4){
+  -webkit-animation-delay: 1.6s;
+}
+
+.rollIn:nth-child(5){
+  -webkit-animation-delay: 2.2s;
+}
+
+.rollIn:nth-child(6){
+  -webkit-animation-delay: 2.6s;
+}
+
+.rollIn:nth-child(7){
+  -webkit-animation-delay: 3s;
+}
+
+.rollIn:nth-child(8){
+  -webkit-animation-delay: 3.4s;
+}
+
+.rollIn:nth-child(9){
+  -webkit-animation-delay: 3.8s;
+}
+
+.rollIn:nth-child(10){
+  -webkit-animation-delay: 4.2s;
+}
+
+
+.rollIn:nth-child(11){
+  -webkit-animation-delay: 4.6s;
+}
+
+.rollIn:nth-child(12){
+  -webkit-animation-delay: 5s;
+}
+
+/*.rollIn:nth-child(13){
+  -webkit-animation-delay: 2.6s;
+}*/
+
+
+/*animasi jello*/
+.jello:nth-child(1){
+  -webkit-animation-delay: 0.1s;
+}
+
+.jello:nth-child(2){
+  -webkit-animation-delay: 0.3s;
+}
+
+.jello:nth-child(3){
+  -webkit-animation-delay: 0.5s;
+}
+
+.jello:nth-child(4){
+  -webkit-animation-delay: 0.7s;
+}
+
+.jello:nth-child(5){
+  -webkit-animation-delay: 0.9s;
+}
+
+/*animasi zoomInDown*/
+.zoomInDown:nth-child(1){
+  -webkit-animation-delay: 0.2s;
+}
+
+.zoomInDown:nth-child(2){
+  -webkit-animation-delay: 0.4s;
+}
+
+.zoomInDown:nth-child(3){
+  -webkit-animation-delay: 0.6s;
+}
+
+.zoomInDown:nth-child(4){
+  -webkit-animation-delay: 0.8s;
+}
+
+.zoomInDown:nth-child(5){
+  -webkit-animation-delay: 1s;
+}
+
+.zoomInDown:nth-child(6){
+  -webkit-animation-delay: 1.2s;
+}
+
+.zoomInDown:nth-child(7){
+  -webkit-animation-delay: 1.4s;
+}
+
+.zoomInDown:nth-child(8){
+  -webkit-animation-delay: 1.6s;
+}
+
+.zoomInDown:nth-child(9){
+  -webkit-animation-delay: 1.8s;
+}
+
+.zoomInDown:nth-child(10){
+  -webkit-animation-delay: 2s;
+}
+
+.zoomInDown:nth-child(11){
+  -webkit-animation-delay: 2.2s;
+}
+
+
+.zoomInDown:nth-child(12){
+  -webkit-animation-delay: 2.4s;
+}

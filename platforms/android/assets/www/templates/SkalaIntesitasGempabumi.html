@@ -1,8 +1,8 @@
 ﻿
 <ion-view view-title="Skala Intensitas Gempabumi" style="background-color:#90CAF9;">
-  <ion-content class="im-wrapper">
+  <ion-content>
     <ion-list>
-        <div class="card" ng-controller="SkalaIntensitasGempabumi">
+        <div class="card animated rubberBand" ng-controller="SkalaIntensitasGempabumi">
          <ion-item ng-repeat="item in items" class="item item-text-wrap">
             <div ng-class="isItemShown(item) ? 'item-expand active' : 'item-expand inactive'">
               <h1>{{ item.title }}</h1>
@@ -14,7 +14,7 @@
             </div>
           </ion-item>
         </div>
-        <div class="card">
+        <div class="card animated jello">
           <div class="item item-button-right">
             SIG : I
             <button class="button button-stable">
@@ -29,7 +29,7 @@
             <pre>PGA(gal)            : < 2.9</pre>
           </div>
         </div>
-        <div class="card">
+        <div class="card animated jello">
           <div class="item item-button-right">
             SIG : II
             <button class="button button-balanced">
@@ -44,7 +44,7 @@
             <pre>PGA(gal)            : 2.9-88</pre>
           </div>
         </div>
-        <div class="card">
+        <div class="card animated jello">
           <div class="item item-button-right">
             SIG : III
             <button class="button button-energized">
@@ -59,7 +59,7 @@
             <pre>PGA(gal)            : 89-167</pre>
           </div>
         </div>
-        <div class="list card">
+        <div class="card animated jello">
           <div class="item item-button-right">
             SIG : IV
             <button class="button button-energized-900">
@@ -74,7 +74,7 @@
             <pre>PGA(gal)            : 168-564</pre>
           </div>
         </div>
-        <div class="card">
+        <div class="card animated jello">
           <div class="item item-button-right">
             SIG : IV
             <button class="button button-assertive-900">

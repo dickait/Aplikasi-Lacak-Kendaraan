@@ -2,12 +2,12 @@
     // Form data for the login modal
     $scope.loginData = {};
 
-    var navIcons = document.getElementsByClassName('ion-navicon');
-    for (var i = 0; i < navIcons.length; i++) {
-        navIcons.addEventListener('click', function () {
-            this.classList.toggle('active');
-        });
-    }
+    // var navIcons = document.getElementsByClassName('ion-navicon');
+    // for (var i = 0; i < navIcons.length; i++) {
+    //     navIcons.addEventListener('click', function () {
+    //         this.classList.toggle('active');
+    //     });
+    // }
 
     var fab = document.getElementById('fab');
     fab.addEventListener('click', function () {
