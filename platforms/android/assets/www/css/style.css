@@ -391,3 +391,64 @@ margin-top:10px;
 .zoomInDown:nth-child(12){
   -webkit-animation-delay: 2.4s;
 }
+
+/*animasi tentang*/
+.lightSpeedIn:nth-child(1){
+  -webkit-animation-delay: 0.1s;
+}
+
+.lightSpeedIn:nth-child(2){
+  -webkit-animation-delay: 0.5s;
+}
+
+/*.wobble:nth-child(3){
+  -webkit-animation-delay: 1s;
+}*/
+
+.bounceIn:nth-child(3){
+  -webkit-animation-delay: 1s;
+}
+
+.bounceIn:nth-child(4){
+  -webkit-animation-delay: 1.3s;
+}
+
+.bounceIn:nth-child(5){
+  -webkit-animation-delay: 1.6s;
+}
+
+.bounceIn:nth-child(6){
+  -webkit-animation-delay: 1.9s;
+}
+
+.bounceIn:nth-child(7){
+  -webkit-animation-delay: 2.1s;
+}
+
+.bounceIn:nth-child(8){
+  -webkit-animation-delay: 2.4s;
+}
+
+/*.wobble:nth-child(9){
+  -webkit-animation-delay: 2.9s;
+}*/
+
+.bounceIn:nth-child(9){
+  -webkit-animation-delay: 2.9s;
+}
+
+.bounceIn:nth-child(10){
+  -webkit-animation-delay: 3.2s;
+}
+
+.bounceIn:nth-child(11){
+  -webkit-animation-delay: 3.5s;
+}
+
+.bounceIn:nth-child(12){
+  -webkit-animation-delay: 3.8s;
+}
+
+.a{
+    height: 50px;
+}
