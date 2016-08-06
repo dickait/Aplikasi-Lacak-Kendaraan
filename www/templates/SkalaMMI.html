@@ -1,7 +1,7 @@
-<ion-view view-title="Skala MMI" style="background-color:#90CAF9;">
+<ion-view view-title="Skala Mercalli" style="background-color:#90CAF9;">
   <ion-content>
     <ion-list>
-        <div class="card animated rubberBand" ng-controller="SkalaMMI">
+      <div class="card animated rubberBand" ng-controller="SkalaMMI">
          <ion-item ng-repeat="item in items" class="item item-text-wrap">
           <div ng-class="isItemShown(item) ? 'item-expand active' : 'item-expand inactive'">
             <h1>{{ item.title }}</h1>
@@ -12,7 +12,6 @@
             {{ isItemShown(item) ? 'Tutup' : 'Buka' }}
           </div>
         </ion-item>
-
       </div>
         <div class="card animated zoomInDown">
           <div class="item item-avatar">
