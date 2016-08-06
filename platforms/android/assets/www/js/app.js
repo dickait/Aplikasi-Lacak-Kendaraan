@@ -26,7 +26,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         url: '/app',
         abstract: true,
         templateUrl: 'templates/menu.html',
-        controller: 'AppCtrl'
+        controller: 'Menu'
     })
 
     .state('app.GempaDirasakan', {
@@ -54,7 +54,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         views: {
             'menuContent': {
                 templateUrl: 'templates/AntisipasiGempabumi.html',
-                controller: 'MotionCtrl'
+                controller: 'AntisipasiController'
             }
         }
     })
@@ -94,7 +94,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         views: {
             'menuContent': {
                 templateUrl: 'templates/Tentang.html',
-                controller: 'StasiunGempaController'
+                controller: 'TentangController'
             }
         }
     })

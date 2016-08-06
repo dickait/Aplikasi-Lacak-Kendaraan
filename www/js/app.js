@@ -94,7 +94,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         views: {
             'menuContent': {
                 templateUrl: 'templates/Tentang.html',
-                controller: 'StasiunGempaController'
+                controller: 'TentangController'
             }
         }
     })
