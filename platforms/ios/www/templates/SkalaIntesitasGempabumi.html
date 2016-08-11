@@ -1,0 +1,94 @@
+﻿
+<ion-view view-title="Skala Intensitas Gempabumi" style="background-color:#90CAF9;">
+  <ion-content>
+    <ion-list>
+        <div class="card animated rubberBand" ng-controller="SkalaIntensitasGempabumi">
+         <ion-item ng-repeat="item in items" class="item item-text-wrap">
+            <div ng-class="isItemShown(item) ? 'item-expand active' : 'item-expand inactive'">
+              <h1>{{ item.title }}</h1>
+              <p>{{ item.text }}</p>
+            </div>
+            <div ng-click="toggleItem(item)" class="item-expand-footer">
+              <i ng-class="isItemShown(item) ? 'ion-ios-minus-outline' : 'ion-ios-plus-outline'"></i>
+              {{ isItemShown(item) ? 'Tutup' : 'Buka' }}
+            </div>
+          </ion-item>
+        </div>
+        <div class="card animated jello">
+          <div class="item item-button-right">
+            SIG : I
+            <button class="button button-stable">
+              <i class="icon ion-ios-pulse-strong"></i>
+            </button>
+          </div>
+          <div class="item item-body">
+            <pre>Warna               : Putih</pre>
+            <pre>Deskripsi Sederhana : TIDAK DIRASAKAN (Not Felt)</pre>
+            <pre>Deskrispsi Rinci    : Tidak dirasakan atau dirasakan hanya oleh beberapa orang tetapi terekam oleh alat.</pre>
+            <pre>Skala MMI           : I-II</pre>
+            <pre>PGA(gal)            : < 2.9</pre>
+          </div>
+        </div>
+        <div class="card animated jello">
+          <div class="item item-button-right">
+            SIG : II
+            <button class="button button-balanced">
+              <i class="icon ion-ios-pulse-strong"></i>
+            </button>
+          </div>
+          <div class="item item-body">
+            <pre>Warna               : Hijau</pre>
+            <pre>Deskripsi Sederhana : DIRASAKAN (Felt)</pre>
+            <pre>Deskrispsi Rinci    : Dirasakan oleh orang banyak tetapi tidak menimbulkan kerusakan. Benda-benda ringan yang digantung bergoyang dan jendela kaca bergetar.</pre>
+            <pre>Skala MMI           : III-V</pre>
+            <pre>PGA(gal)            : 2.9-88</pre>
+          </div>
+        </div>
+        <div class="card animated jello">
+          <div class="item item-button-right">
+            SIG : III
+            <button class="button button-energized">
+              <i class="icon ion-ios-pulse-strong"></i>
+            </button>
+          </div>
+          <div class="item item-body">
+            <pre>Warna               : Kuning</pre>
+            <pre>Deskripsi Sederhana : KERUSAKAN RINGAN (Slight Damage)</pre>
+            <pre>Deskrispsi Rinci    : Bagian non struktur bangunan mengalami kerusakan ringan, seperti retak rambut pada dinding, genteng bergeser ke bawah dan sebagian berjatuhan.</pre>
+            <pre>Skala MMI           : VI</pre>
+            <pre>PGA(gal)            : 89-167</pre>
+          </div>
+        </div>
+        <div class="card animated jello">
+          <div class="item item-button-right">
+            SIG : IV
+            <button class="button button-energized-900">
+              <i class="icon ion-ios-pulse-strong"></i>
+            </button>
+          </div>
+          <div class="item item-body">
+            <pre>Warna               : Jingga</pre>
+            <pre>Deskripsi Sederhana : KERUSAKAN SEDANG (Moderate Damage)</pre>
+            <pre>Deskrispsi Rinci    : Banyak Retakan terjadi pada dinding bangunan sederhana, sebagian roboh, kaca pecah. Sebagian plester dinding lepas. Hampir sebagian besar genteng bergeser ke bawah atau jatuh. Struktur bangunan mengalami kerusakan ringan sampai sedang.</pre>
+            <pre>Skala MMI           : VII-VIII</pre>
+            <pre>PGA(gal)            : 168-564</pre>
+          </div>
+        </div>
+        <div class="card animated jello">
+          <div class="item item-button-right">
+            SIG : IV
+            <button class="button button-assertive-900">
+              <i class="icon ion-ios-pulse-strong"></i>
+            </button>
+          </div>
+          <div class="item item-body">
+            <pre>Warna               : Merah</pre>
+            <pre>Deskripsi Sederhana : KERUSAKAN BERAT (Heavy Damage)</pre>
+            <pre>Deskrispsi Rinci    : Sebagian besar dinding bangunan permanen roboh. Struktur bangunan mengalami kerusakan berat. Rel kereta api melengkung.</pre>
+            <pre>Skala MMI           : IX-XII</pre>
+            <pre>PGA(gal)            : > 564</pre>
+          </div>
+        </div>
+      </ion-list>
+  </ion-content>
+</ion-view>
