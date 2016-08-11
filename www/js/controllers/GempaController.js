@@ -3,11 +3,7 @@ angular.module('app')
 
     // Setup the loader
     $ionicLoading.show({
-      content: 'Loading',
-      animation: 'fade-in',
-      showBackdrop: true,
-      maxWidth: 200,
-      showDelay: 0
+      template: '<div class="loader"><svg class="circular"><circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg></div>'
     });
 
     $scope.dataGempa = {};
@@ -30,11 +26,7 @@ angular.module('app')
   .controller('GempaTerkiniController', function($scope, services, $ionicLoading) {
 
     $ionicLoading.show({
-      content: 'Loading',
-      animation: 'fade-in',
-      showBackdrop: true,
-      maxWidth: 200,
-      showDelay: 0
+      template: '<div class="loader"><svg class="circular"><circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg></div>'
     });
 
     $scope.dataGempa = {};
@@ -56,11 +48,7 @@ angular.module('app')
   .controller('GempaDirasakanController', function($scope, services, $ionicLoading) {
 
     $ionicLoading.show({
-      content: 'Loading',
-      animation: 'fade-in',
-      showBackdrop: true,
-      maxWidth: 200,
-      showDelay: 0
+      template: '<div class="loader"><svg class="circular"><circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg></div>'
     });
 
     $scope.dataGempa = {};
@@ -82,11 +70,7 @@ angular.module('app')
   .controller('StasiunGempaController', function($scope, services, $ionicLoading) {
 
     $ionicLoading.show({
-      content: 'Loading',
-      animation: 'fade-in',
-      showBackdrop: true,
-      maxWidth: 200,
-      showDelay: 0
+      template: '<div class="loader"><svg class="circular"><circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg></div>'
     });
 
     $scope.dataGempa = {};

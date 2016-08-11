@@ -342,6 +342,10 @@ margin-top:10px;
   -webkit-animation-delay: 0.9s;
 }
 
+.jello:nth-child(6){
+  -webkit-animation-delay: 1.1s;
+}
+
 /*animasi zoomInDown*/
 .zoomInDown:nth-child(1){
   -webkit-animation-delay: 0.2s;
