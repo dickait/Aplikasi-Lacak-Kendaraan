@@ -1,10 +1,24 @@
 angular.module('app')
-  .controller('GempaTerbaruController', function($scope, services, $ionicLoading) {
-
+  .controller('GempaTerbaruController', function($scope, services, $ionicLoading, $ionicPlatform, $ionicPopup, $cordovaNetwork) {
     // Setup the loader
     $ionicLoading.show({
       template: '<div class="loader"><svg class="circular"><circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg></div>'
-    });
+    })
+  $ionicPlatform.ready(function() {
+      if ($cordovaNetwork.isOffline()) {
+        $ionicLoading.hide();
+        $ionicPopup.alert({
+                title: 'ERROR',
+                template: 'Tidak dapat dimuat, Hubungkan dengan Internet'
+              })
+              .then(function(res) {
+                // console.log('Thank you for not eating my delicious ice cream cone');
+                ionic.Platform.exitApp();
+              })
+      }
+  })
+
+
 
     $scope.dataGempa = {};
 

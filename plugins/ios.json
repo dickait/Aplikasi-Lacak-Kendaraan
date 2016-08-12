@@ -9,6 +9,9 @@
     "installed_plugins": {
         "cordova-plugin-network-information": {
             "PACKAGE_NAME": "com.ionicframework.starter"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.starter"
         }
     },
     "dependent_plugins": {}
