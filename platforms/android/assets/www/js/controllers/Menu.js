@@ -3,8 +3,8 @@
     fab.addEventListener('click', function () {
         $scope.showConfirm = function() {
          var confirmPopup = $ionicPopup.confirm({
-           title: 'Informasi Gempabumi',
-           template: 'Anda yakin ingin keluar dari aplikasi ?'
+           title: 'Keluar',
+           template: 'Anda yakin ingin menutup aplikasi ini ?'
          });
 
          confirmPopup.then(function(res) {
