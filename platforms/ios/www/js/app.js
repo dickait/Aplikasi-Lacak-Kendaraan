@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 var app = angular.module('app', ['ionic', 'ionic-material', 'app.services', 'ngMap', 'ngCordova']);
 
-app.run(function ($ionicPlatform) {
+app.run(function ($ionicPlatform, $ionicPopup) {
     $ionicPlatform.ready(function () {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
@@ -17,6 +17,19 @@ app.run(function ($ionicPlatform) {
             StatusBar.styleDefault();
         }
     });
+    $ionicPlatform.registerBackButtonAction(function(event) {
+    if (true) { // your check here
+      $ionicPopup.confirm({
+        title: 'Keluar',
+        template: 'Anda yakin ingin menutup aplikasi ini ?'
+      }).then(function(res) {
+        if (res) {
+          ionic.Platform.exitApp();
+        }
+      })
+    }
+  }, 100);
+
 })
 
 app.config(function ($stateProvider, $urlRouterProvider) {
@@ -26,7 +39,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         url: '/app',
         abstract: true,
         templateUrl: 'templates/menu.html',
-        controller: 'Menu'
+        controller: 'MenuController'
     })
 
     .state('app.GempaDirasakan', {

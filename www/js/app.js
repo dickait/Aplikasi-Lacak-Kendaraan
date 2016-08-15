@@ -39,7 +39,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         url: '/app',
         abstract: true,
         templateUrl: 'templates/menu.html',
-        controller: 'Menu'
+        controller: 'MenuController'
     })
 
     .state('app.GempaDirasakan', {

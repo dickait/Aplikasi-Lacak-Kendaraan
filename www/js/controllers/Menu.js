@@ -1,4 +1,4 @@
-﻿app.controller('Menu', function ($scope, $ionicPopup) {
+﻿app.controller('MenuController', function ($scope, $ionicPopup) {
     var fab = document.getElementById('fab');
     fab.addEventListener('click', function () {
         $scope.showConfirm = function() {
