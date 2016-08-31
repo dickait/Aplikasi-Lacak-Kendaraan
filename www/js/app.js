@@ -7,9 +7,6 @@ var app = angular.module('app', ['ionic', 'ionic-material', 'app.services', 'ngM
 
 app.run(function ($ionicPlatform, $ionicPopup) {
     $ionicPlatform.ready(function () {
-        // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-        // for form inputs)
-
         if (window.cordova && window.cordova.plugins.Keyboard) {
             cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
         }
@@ -122,6 +119,5 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         }
     });
 
-    // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/app/GempaTerbaru');
 });
