@@ -1,0 +1,35 @@
+<ion-view view-title="Riwayat Lokasi" style="background-color:#98E6F6;">
+  <ion-content>
+    <div style="width: 100%; height: 100%;">
+      <ng-map style="width: 100%; height: 93%;" zoom="15" center="[({{data10.latitude}},{{data10.longitude}}]">
+        
+        <custom-marker id="start" position="current-location">
+            <div>
+              <img src="img/lokasi.png"> 
+            </div>
+          <marker position="current-location" title="Posisi HP" icon="https://www.robotwoods.com/dev/misc/bluecircle.png"></marker>
+        </custom-marker>
+
+        <custom-marker id="end" position="[{{data10.latitude}},{{data10.longitude}}]">
+            <div>
+              <img src="img/lokasiken.png"> 
+            </div>
+          <marker position="[{{data10.latitude}},{{data10.longitude}}]" title="Posisi HP" icon="img/logken.png"></marker>
+        </custom-marker>
+
+        <directions
+          suppress-markers="true"
+          draggable="false"
+          panel="directions-panel"
+          travel-mode="DRIVING"
+          origin="current-location" 
+          destination="[{{data10.latitude}},{{data10.longitude}}]">
+        </directions>
+      </ng-map> 
+    </div>
+    
+  </ion-content>
+  <div class="bar bar-footer bar-calm" style="width: 100%;" nav-clear menu-close ui-sref="app.DataRiwayat">
+      <h6 class="title"><i class="icon ion-arrow-left-a"></i><font size="3"> Sebelumnya</font></h6>
+    </div>
+</ion-view>

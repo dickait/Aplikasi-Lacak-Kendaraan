@@ -5,8 +5,8 @@
 // the 2nd parameter is an array of 'requires'
 var app = angular.module('app', ['ionic', 'ionic-material', 'app.services', 'ngMap', 'ngCordova']);
 
-app.run(function ($ionicPlatform, $ionicPopup) {
-    $ionicPlatform.ready(function () {
+app.run(function($ionicPlatform, $ionicPopup, $interval) {
+    $ionicPlatform.ready(function() {
         if (window.cordova && window.cordova.plugins.Keyboard) {
             cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
         }
@@ -15,86 +15,80 @@ app.run(function ($ionicPlatform, $ionicPopup) {
         }
     });
     $ionicPlatform.registerBackButtonAction(function(event) {
-    if (true) { // your check here
-      $ionicPopup.confirm({
-        title: 'Keluar',
-        template: 'Anda yakin ingin menutup aplikasi ini ?'
-      }).then(function(res) {
-        if (res) {
-          ionic.Platform.exitApp();
+        if (true) { // your check here
+            $ionicPopup.confirm({
+                title: 'Keluar',
+                template: 'Anda yakin ingin menutup aplikasi ini ?'
+            }).then(function(res) {
+                if (res) {
+                    ionic.Platform.exitApp();
+                }
+            })
         }
-      })
-    }
-  }, 100);
+    }, 100);
 
 })
 
-app.config(function ($stateProvider, $urlRouterProvider) {
+app.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
 
-    .state('app', {
+        .state('app', {
         url: '/app',
         abstract: true,
         templateUrl: 'templates/menu.html',
         controller: 'MenuController'
     })
 
-    .state('app.GempaDirasakan', {
-        url: '/GempaDirasakan',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/GempaDirasakan.html',
-                controller: 'GempaDirasakanController'
-            }
-        }
-    })
 
-    .state('app.SkalaIntesitas', {
-        url: '/SkalaIntesitas',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/SkalaIntesitasGempabumi.html',
-                controller: 'SkalaIntensitasGempabumi'
-            }
-        }
-    })
 
-    .state('app.AntisipasiGempabumi', {
-        url: '/AntisipasiGempabumi',
+    .state('app.AntisipasiKehilangan', {
+        url: '/AntisipasiKehilangan',
         views: {
             'menuContent': {
-                templateUrl: 'templates/AntisipasiGempabumi.html',
+                templateUrl: 'templates/AntisipasiKehilangan.html',
                 controller: 'AntisipasiController'
             }
         }
     })
 
-    .state('app.GempaTerbaru', {
-        url: '/GempaTerbaru',
+    .state('app.DataTerbaru', {
+        url: '/DataTerbaru',
         views: {
             'menuContent': {
-                templateUrl: 'templates/GempaTerbaru.html',
-                controller: 'GempaTerbaruController'
+                templateUrl: 'templates/DataTerbaru.html',
+                controller: 'DataTerbaruController'
             }
         }
     })
 
-    .state('app.SkalaMMI', {
-        url: '/SkalaMMI',
+
+
+    .state('app.DataStreet', {
+        url: '/DataStreet',
         views: {
             'menuContent': {
-                templateUrl: 'templates/SkalaMMI.html',
-                controller: 'SkalaMMI'
+                templateUrl: 'templates/DataStreet.html',
+                controller: 'DataStreetController'
             }
         }
     })
 
-    .state('app.JaringanStasiun', {
-        url: '/JaringanStasiun',
+    .state('app.DataRiwayat', {
+        url: '/DataRiwayat',
         views: {
             'menuContent': {
-                templateUrl: 'templates/JaringanStasiun.html',
-                controller: 'StasiunGempaController'
+                templateUrl: 'templates/DataRiwayat.html',
+                controller: 'DataRiwayatController'
+            }
+        }
+    })
+
+    .state('app.MapRiwayat', {
+        url: '/MapRiwayat',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/MapRiwayat.html',
+                controller: 'DataRiwayatController'
             }
         }
     })
@@ -109,15 +103,112 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         }
     })
 
-    .state('app.GempaTerkini', {
-        url: '/GempaTerkini',
+    .state('app.Data10', {
+        url: '/RiwayatMap/Riwayat10',
         views: {
             'menuContent': {
-                templateUrl: 'templates/GempaTerkini5SR.html',
-                controller: 'GempaTerkiniController'
+                templateUrl: 'templates/RiwayatMap/Riwayat10.html',
+                controller: 'DataRiwayatController'
             }
         }
-    });
+    })
 
-    $urlRouterProvider.otherwise('/app/GempaTerbaru');
+    .state('app.Data9', {
+        url: '/RiwayatMap/Riwayat9',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/RiwayatMap/Riwayat9.html',
+                controller: 'DataRiwayatController'
+            }
+        }
+    })
+
+    .state('app.Data8', {
+        url: '/RiwayatMap/Riwayat8',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/RiwayatMap/Riwayat8.html',
+                controller: 'DataRiwayatController'
+            }
+        }
+    })
+
+    .state('app.Data7', {
+        url: '/RiwayatMap/Riwayat7',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/RiwayatMap/Riwayat7.html',
+                controller: 'DataRiwayatController'
+            }
+        }
+    })
+
+
+    .state('app.Data6', {
+        url: '/RiwayatMap/Riwayat6',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/RiwayatMap/Riwayat6.html',
+                controller: 'DataRiwayatController'
+            }
+        }
+    })
+
+    .state('app.Data5', {
+        url: '/RiwayatMap/Riwayat5',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/RiwayatMap/Riwayat5.html',
+                controller: 'DataRiwayatController'
+            }
+        }
+    })
+
+
+    .state('app.Data4', {
+        url: '/RiwayatMap/Riwayat4',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/RiwayatMap/Riwayat4.html',
+                controller: 'DataRiwayatController'
+            }
+        }
+    })
+
+
+
+    .state('app.Data3', {
+        url: '/RiwayatMap/Riwayat3',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/RiwayatMap/Riwayat3.html',
+                controller: 'DataRiwayatController'
+            }
+        }
+    })
+
+    .state('app.Data2', {
+        url: '/RiwayatMap/Riwayat2',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/RiwayatMap/Riwayat2.html',
+                controller: 'DataRiwayatController'
+            }
+        }
+    })
+
+    .state('app.Data1', {
+        url: '/RiwayatMap/Riwayat1',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/RiwayatMap/Riwayat1.html',
+                controller: 'DataRiwayatController'
+            }
+        }
+    })
+
+
+
+
+    $urlRouterProvider.otherwise('/app/DataTerbaru');
 });

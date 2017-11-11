@@ -1,0 +1,11 @@
+<ion-view view-title="Street View" style="background-color:#E6F9FF;">
+    <ion-content>
+        <div style="width:100%; height: 100%;" id="street-view">
+            <ng-map style="width: 100%; height: 93%;" street-view="StreetViewPanorama(document.querySelector('#street-view'), {position:new google.maps.LatLng({{dataPosisi.latitude}}, {{dataPosisi.longitude}})})">
+            </ng-map>
+        </div>
+        <div class="bar bar-footer bar-calm" nav-clear menu-close ui-sref="app.DataTerbaru">
+            <h1 class="title"><i class="icon ion-arrow-left-a"></i> Kembali</h1>
+        </div>
+    </ion-content>
+</ion-view>

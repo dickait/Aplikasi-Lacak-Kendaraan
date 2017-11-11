@@ -1,6 +1,6 @@
 ﻿<ion-side-menus enable-menu-with-back-views="false">
     <ion-side-menu-content>
-        <ion-nav-bar class="bar-positive">
+        <ion-nav-bar class="bar-calm">
             <ion-nav-back-button class="no-text">
             </ion-nav-back-button>
             <ion-nav-buttons side="left">
@@ -11,41 +11,29 @@
     </ion-side-menu-content>
     <ion-side-menu side="left">
         <ion-header-bar class="expanded">
-            <img src="img/logo.png" class="avatar motion spin fade">
-            <div class="menu-bottom" style="color:#103f90;">
-                Informasi Gempabumi
+            <img src="img/logo.png" class="avatar motion spin" >
+            <div class="menu-bottom" style="color:#000000;">
+                Informasi Posisi Kendaraan
             </div>
         </ion-header-bar>
         <ion-content class="stable-bg has-expanded-header">
             <ion-list>
               <!-- iu-href -->
-                <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.GempaTerbaru">
-                    <i class="icon ion-map"></i>Gempabumi Terbaru
+                <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.DataTerbaru">
+                    <i class="icon ion-android-map"></i>Posisi Kendaraan
                 </ion-item>
-                <!-- submenu gempabumi terbaru -->
-                <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.GempaTerkini">
-                    <i class="icon ion-android-star"></i>Gempabaru Terkini > 5 SR
+                <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.DataRiwayat">
+                    <i class="icon ion-ios-timer"></i>Riwayat Posisi
                 </ion-item>
-                <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.GempaDirasakan">
-                    <i class="icon ion-android-star-half"></i>Gempabumi Dirasakan
-                </ion-item>
-                <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.AntisipasiGempabumi">
-                    <i class="icon ion-ios-heart"></i>Antisipasi Gempabumi
-                </ion-item>
-                <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.SkalaIntesitas">
-                    <i class="icon ion-ios-analytics"></i>Skala Intesitas Gempa
-                </ion-item>
-                <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.SkalaMMI">
-                    <i class="icon ion-ios-analytics-outline"></i>Skala Mercalli
-                </ion-item>
-                <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.JaringanStasiun">
-                    <i class="icon ion-location"></i>Jaringan Stasiun Gempa
+                
+                <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.AntisipasiKehilangan">
+                    <i class="icon ion-ios-heart"></i>Antisipasi Kehilangan
                 </ion-item>
                 <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.Tentang">
-                    <i class="icon ion-help-circled"></i>Tentang
+                    <i class="icon ion-ios-list-outline"></i>Tentang
                 </ion-item>
                 <ion-item class="item-icon-left" id="fab" nav-clear menu-close ng-click="showConfirm()">
-                    <i class="icon ion-close-circled"></i>Keluar
+                    <i class="icon ion-log-out"></i>Keluar
                 </ion-item>
             </ion-list>
         </ion-content>

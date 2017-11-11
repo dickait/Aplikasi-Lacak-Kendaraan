@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/azizsudrajat/Documents/belajar/belajarIonic/bmkg/infogempa/platforms/android/CordovaLib/assets"/></dataSet><dataSet config="debug"><source path="/Users/azizsudrajat/Documents/belajar/belajarIonic/bmkg/infogempa/platforms/android/CordovaLib/src/debug/assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="H:\belajarionic\dataLokasi\platforms\android\CordovaLib\assets"/><source path="H:\belajarionic\dataLokasi\platforms\android\CordovaLib\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="H:\belajarionic\dataLokasi\platforms\android\CordovaLib\src\debug\assets"/></dataSet></merger>

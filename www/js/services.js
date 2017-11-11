@@ -1,21 +1,13 @@
 angular.module('app.services', [])
 
-.factory('services', ['$http', function($http){
-  var baseUrl = 'https://bmkg-mufrizal.rhcloud.com';
+.factory('services', ['$http', function($http) {
 
-  return {
-    getGempa: function() {
-      return $http.get(baseUrl + '/api/gempa');
-    },
-    getGempaDirasakan: function(){
-      return $http.get(baseUrl + '/api/gempadirasakan');
-    },
-    getStasiun: function(){
-      return $http.get(baseUrl + '/api/stasiun');
-    }
-  }
-}])
+        var baseUrl = 'http://dickaariptian.xyz';
+        return {
+            getData: function() {
 
-.service('BlankService', [function(){
-
-}]);
+                return $http.get(baseUrl + '/api/getmap.php');
+            }
+        }
+    }])
+    .service('BlankService', [function() {}]);
